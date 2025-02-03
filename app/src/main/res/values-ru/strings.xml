@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_number">Введите число</string>
+    <string name="calculate_sum">Посчитать сумму</string>
+    <string name="calculate_product">Посчитать произведение</string>
+    <string name="result">Результат</string>
+    <string name="sum_result">Сумма: %d</string>
+    <string name="product_result">Произведение: %d</string>
+    <string name="invalid_input">Ошибка: Введите корректное число</string>
+    <string name="invalid_input_min">Ошибка: Введенное число не может быть меньше 1</string>
+    <string name="invalid_input_max">Ошибка: Число слишком большое (максимум 20)</string>
+</resources>
