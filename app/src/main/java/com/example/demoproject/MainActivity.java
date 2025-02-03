@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -56,15 +58,18 @@ public class MainActivity extends AppCompatActivity {
 
             if (number < 1) {
                 resultView.setText(R.string.invalid_input_min);
+                Toast.makeText(this, R.string.invalid_input_min, Toast.LENGTH_SHORT).show();
                 return -1;
             }
             if (number > 20) {
                 resultView.setText(R.string.invalid_input_max);
+                Toast.makeText(this, R.string.invalid_input_max, Toast.LENGTH_SHORT).show();
                 return -1;
             }
             return number;
         } catch (NumberFormatException e) {
             resultView.setText(R.string.invalid_input);
+            Toast.makeText(this, R.string.invalid_input, Toast.LENGTH_SHORT).show();
             return -1;
         }
     }
